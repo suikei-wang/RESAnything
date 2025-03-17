@@ -6,7 +6,7 @@
         content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>RESAnything: Attribute Prompting for Arbitrary Referring Segmentation</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -32,7 +32,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/images/icon.jpg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -42,45 +42,6 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav>
 
 
 <section class="hero">
@@ -88,32 +49,35 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title">RESAnything: Attribute Prompting for Arbitrary Referring Segmentation</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
+              <a href="https://suikei-wang.github.io/">Ruiqi Wang</a><sup>1,2</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
+              <a href="https://yi-ming-qian.github.io/">Yiming Qian</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
+              <a href="https://kwang-ether.github.io/">Kai Wang</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
+              <a href="https://scholar.google.com/citations?user=64RHiS4AAAAJ&hl=en">Maria Zontak</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
+              <a href="https://fenggenyu.github.io/">Fenggen Yu</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
+              <a href="https://www.linkedin.com/in/brian-jackson-8701a2a2/">Brian P. Jackson</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+              <a href="https://www.linkedin.com/in/eric-bennett-vision">Eric P. Bennett</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://www2.cs.sfu.ca/~haoz/">Hao Zhang</a><sup>1,2</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block"><sup>1</sup>Simon Fraser University,</span>
+            <span class="author-block"><sup>2</sup>Amazon Science</span>
           </div>
 
           <div class="column has-text-centered">
@@ -178,77 +142,13 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
+      <img src="./static/images/teaser.png"/>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        Open-vocabulary and zero-shot referring expression segmentation with <span class="dnerf">RESanything</span>.
       </h2>
     </div>
   </div>
 </section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -258,31 +158,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            We present an <i>open-vocabulary</i> and <i>zero-shot</i> method for <i>arbitrary</i> referring expression segmentation (RES), targeting more general input expressions than those handled by prior works. 
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            Specifically, our inputs encompass both object- and <i>part-level</i> labels as well as <i>implicit</i> references pointing to <i>properties</i> or <i>qualities</i> of object/part function, design, style, material, etc. Our model, coined <span class="dnerf">RESanything</span>, leverages Chain-of-Thoughts (CoT) reasoning, where the key idea is <i>attribute prompting</i>. We generate detailed descriptions of object/part attributes including shape, color, and location for potential segment proposals through systematic prompting of a large language model (LLM), where the proposals are produced by a foundational image segmentation model. Our approach encourages deep reasoning about object/part attributes related to function, style, design, etc., to handle implicit queries without any part annotations for training or fine-tuning. 
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            As the first zero-shot and LLM-based RES method, <span class="dnerf">RESanything</span> achieves superior performance among zero-shot methods on traditional RES benchmarks and significantly outperforms existing methods on challenging scenarios involving implicit queries and complex part-level relations. We contribute a new benchmark dataset of ~3K carefully curated RES instances to assess part-level, arbitrary RES solutions.
           </p>
         </div>
       </div>
@@ -294,7 +176,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+          <iframe src="https://www.youtube.com/embed/y09T2Rn9nvU?rel=0&amp;showinfo=0"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
@@ -309,139 +191,389 @@
 
     <div class="columns is-centered">
 
-      <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
+          <img src="./static/images/overview.png" width="500" />
+
+
         </div>
       </div>
-      <!--/ Visual Effects. -->
 
-      <!-- Matting. -->
       <div class="column">
-        <h2 class="title is-3">Matting</h2>
         <div class="columns is-centered">
-          <div class="column content">
+          <div class="content has-text-justified">
             <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
+              <br>
+              <br>
+              Overview of <span class="dnerf">RESanything</span>, a two-stage framework for zero-shot arbitrary RES. The attribute prompting stage generates reference and candidate texts from input image and referring expression using SAM-generated proposals and an MLLM.The mask proposal selection stage leverages MLLM and CLIP to evaluate both candidates and proposals and produce the final response.
             </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
           </div>
 
         </div>
       </div>
     </div>
-    <!--/ Matting. -->
 
-    <!-- Animation. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
 
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
+      
+        <h2 class="title is-3">Vanilla Referring Expression Segmentation</h2>
+        <div class="content has-text-justified">
+          <!-- HTML for LaTeX Table -->
+<div class="table-container">
+  <table class="latex-table">
+      <caption>Table 1: Quantitative results on standard RES benchmarks refCOCO/+/g, reported as cIoU values.</caption>
+      <thead class="toprule">
+          <tr>
+              <th class="text-align-left bold">Method</th>
+              <th></th>
+              <th></th>
+              <th colspan="3" class="bold">refCOCO</th>
+              <th></th>
+              <th colspan="3" class="bold">refCOCO+</th>
+              <th></th>
+              <th colspan="3" class="bold">refCOCOg</th>
+          </tr>
+          <tr class="cmidrule">
+              <th></th>
+              <th></th>
+              <th>val</th>
+              <th>testA</th>
+              <th>testB</th>
+              <th></th>
+              <th>val</th>
+              <th>testA</th>
+              <th>testB</th>
+              <th></th>
+              <th>val(U)</th>
+              <th>val(G)</th>
+              <th>test(U)</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr class="midrule">
+              <td class="text-align-left" colspan="13"><i>fully-supervised on the training set</i></td>
+          </tr>
+          <tr>
+              <td class="text-align-left">VLT</td>
+              <td></td>
+              <td>67.5</td>
+              <td>70.5</td>
+              <td>65.2</td>
+              <td></td>
+              <td>56.3</td>
+              <td>61.0</td>
+              <td>50.1</td>
+              <td></td>
+              <td>55.0</td>
+              <td>-</td>
+              <td>57.7</td>
+          </tr>
+          <tr>
+              <td class="text-align-left">CRIS</td>
+              <td></td>
+              <td>70.5</td>
+              <td>73.2</td>
+              <td>66.1</td>
+              <td></td>
+              <td>62.3</td>
+              <td>68.1</td>
+              <td>53.7</td>
+              <td></td>
+              <td>59.9</td>
+              <td>-</td>
+              <td>60.4</td>
+          </tr>
+          <tr>
+              <td class="text-align-left">LAVT</td>
+              <td></td>
+              <td>72.7</td>
+              <td>75.8</td>
+              <td>68.8</td>
+              <td></td>
+              <td>62.1</td>
+              <td>68.4</td>
+              <td>55.1</td>
+              <td></td>
+              <td>61.2</td>
+              <td>-</td>
+              <td>62.1</td>
+          </tr>
+          <tr>
+              <td class="text-align-left">GRES</td>
+              <td></td>
+              <td>73.8</td>
+              <td>76.5</td>
+              <td>70.2</td>
+              <td></td>
+              <td>66.0</td>
+              <td>71.0</td>
+              <td>57.7</td>
+              <td></td>
+              <td>65.0</td>
+              <td>-</td>
+              <td>66.0</td>
+          </tr>
+          <tr class="midrule">
+              <td class="text-align-left" colspan="13"><i>pre-trained on the same task</i></td>
+          </tr>
+          <tr>
+              <td class="text-align-left">UniRES</td>
+              <td></td>
+              <td>71.2</td>
+              <td>74.8</td>
+              <td>66.0</td>
+              <td></td>
+              <td>59.9</td>
+              <td>66.7</td>
+              <td>51.4</td>
+              <td></td>
+              <td>62.3</td>
+              <td>-</td>
+              <td>63.2</td>
+          </tr>
+          <tr>
+              <td class="text-align-left">LISA-7B</td>
+              <td></td>
+              <td>74.9</td>
+              <td>79.1</td>
+              <td>72.3</td>
+              <td></td>
+              <td>65.1</td>
+              <td>70.8</td>
+              <td>58.1</td>
+              <td></td>
+              <td>67.9</td>
+              <td>-</td>
+              <td>70.6</td>
+          </tr>
+          <tr>
+              <td class="text-align-left">GSVA</td>
+              <td></td>
+              <td>77.2</td>
+              <td>78.9</td>
+              <td>73.5</td>
+              <td></td>
+              <td>65.9</td>
+              <td>69.6</td>
+              <td>59.8</td>
+              <td></td>
+              <td>72.7</td>
+              <td>-</td>
+              <td>73.3</td>
+          </tr>
+          <tr>
+              <td class="text-align-left">GLaMM</td>
+              <td></td>
+              <td>79.5</td>
+              <td class="bold">83.2</td>
+              <td class="bold">76.9</td>
+              <td></td>
+              <td>72.6</td>
+              <td>78.7</td>
+              <td>64.6</td>
+              <td></td>
+              <td>74.2</td>
+              <td>-</td>
+              <td>74.9</td>
+          </tr>
+          <tr class="highlight-red">
+              <td class="text-align-left">SAM4MLLM</td>
+              <td></td>
+              <td class="bold">79.8</td>
+              <td>82.7</td>
+              <td>74.7</td>
+              <td></td>
+              <td class="bold">74.6</td>
+              <td class="bold">80.0</td>
+              <td class="bold">67.2</td>
+              <td></td>
+              <td class="bold">75.5</td>
+              <td>-</td>
+              <td class="bold">76.4</td>
+          </tr>
+          <tr class="midrule">
+              <td class="text-align-left" colspan="13"><i>training-free zero-shot</i></td>
+          </tr>
+          <tr>
+              <td class="text-align-left">GLCLIP</td>
+              <td></td>
+              <td>26.2</td>
+              <td>24.9</td>
+              <td>26.6</td>
+              <td></td>
+              <td>27.8</td>
+              <td>25.6</td>
+              <td>27.8</td>
+              <td></td>
+              <td>33.5</td>
+              <td>33.6</td>
+              <td>33.7</td>
+          </tr>
+          <tr>
+              <td class="text-align-left">CaR</td>
+              <td></td>
+              <td>33.6</td>
+              <td>35.4</td>
+              <td>30.5</td>
+              <td></td>
+              <td>34.2</td>
+              <td>36.0</td>
+              <td>31.0</td>
+              <td></td>
+              <td>36.7</td>
+              <td>36.6</td>
+              <td>36.6</td>
+          </tr>
+          <tr class="highlight-blue">
+              <td class="text-align-left">Ours</td>
+              <td></td>
+              <td class="bold">68.5</td>
+              <td class="bold">72.2</td>
+              <td class="bold">70.3</td>
+              <td></td>
+              <td class="bold">60.7</td>
+              <td class="bold">65.6</td>
+              <td class="bold">52.2</td>
+              <td></td>
+              <td class="bold">60.1</td>
+              <td class="bold">60.5</td>
+              <td class="bold">60.9</td>
+          </tr>
+      </tbody>
+      <tfoot class="bottomrule">
+      </tfoot>
+  </table>
+</div>
+</div>
+        <br/>
+
+<h2 class="title is-3">Reasoning Segmentation</h2>
+<div class="content has-text-justified">
+<!-- HTML for ReasonSeg LaTeX Table with inline width control -->
+<div class="table-container" style="max-width: 700px; margin: 0 auto;">
+  <table class="latex-table" style="width: 600px; margin: 0 auto;">
+      <caption>Table 2: Quantitative results on ReasonSeg validation set.</caption>
+      <thead class="toprule">
+          <tr>
+              <th rowspan="2" class="text-align-center">Method</th>
+              <th></th>
+              <th>gIoU</th>
+              <th>cIoU</th>
+          </tr>
+      </thead>
+      <tbody>
+          
+            <tr class="midrule">
+              <td class="text-align-left" colspan="13"><i>pre-trained / supervised</i></td>
+          </tr>
+              <td class="text-align-left">GLaMM</td>
+              <td></td>
+              <td>47.4</td>
+              <td>47.2</td>
+          </tr>
+          <tr>
+              <td class="text-align-left">LISA-7B-LLaVA1.5</td>
+              <td></td>
+              <td>53.6</td>
+              <td>52.3</td>
+          </tr>
+          <tr>
+              <td class="text-align-left">LISA-13B-LLaVA1.5</td>
+              <td></td>
+              <td>57.7</td>
+              <td>60.3</td>
+          </tr>
+          <tr>
+              <td class="text-align-left">SAM4MLLM</td>
+              <td></td>
+              <td>58.4</td>
+              <td>60.4</td>
+          </tr>
+          <td class="text-align-left" colspan="13"><i>training-free zero-shot</i></td>
+          <tr>
+            <td class="text-align-left">CaR</td>
+            <td></td>
+            <td>35.2</td>
+            <td>26.4</td>
+        </tr>
+          <tr class="highlight-blue">
+              <td class="text-align-left">Ours</td>
+              <td></td>
+              <td class="bold">74.6</td>
+              <td class="bold">72.5</td>
+          </tr>
+      </tbody>
+      <tfoot class="bottomrule">
+      </tfoot>
+  </table>
+</div>
+</div>
+        
+        <h2 class="title is-3"><span class="dnerf">ABO-image-ares</span></h2>
+
         <div class="content has-text-justified">
           <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
+            To further evaluate the capability of <span class="dnerf">RESanything</span> in handling implicit expressions (e.g.,part-level materials, features, and functionalities), we establish the <span class="dnerf">ABO-image-ares</span> benchmark for complex reasoning segmentation tasks.
           </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
+          <img src="./static/images/abo-ares.png"/>
         </div>
         <br/>
-        <!--/ Interpolating. -->
 
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
+        <!-- HTML for Dataset LaTeX Table with inline width control -->
+<div class="table-container" style="max-width: 600px; margin: 0 auto;">
+  <table class="latex-table" style="width: 500px; margin: 0 auto;">
+      <caption>Table 3: Quantitative results on <span class="dnerf">RESanything</span>.</caption>
+      <thead class="toprule">
+          <tr>
+              <th rowspan="2" class="text-align-left">Method</th>
+              <th></th>
+              <th>gIoU</th>
+              <th>cIoU</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr class="midrule">
+              <td class="text-align-left">LISA-13B-LLaVA1.5</td>
+              <td></td>
+              <td>43.3</td>
+              <td>34.0</td>
+          </tr>
+          <tr>
+              <td class="text-align-left">GLaMM</td>
+              <td></td>
+              <td>46.2</td>
+              <td>38.7</td>
+          </tr>
+
+          <tr>
+            <td class="text-align-left">CaR</td>
+            <td></td>
+            <td>24.4</td>
+            <td>15.7</td>
+        </tr>
+          <tr class="highlight-blue">
+              <td class="text-align-left">Ours</td>
+              <td></td>
+              <td>78.2</td>
+              <td>72.4</td>
+          </tr>
+      </tbody>
+      <tfoot class="bottomrule">
+      </tfoot>
+  </table>
+</div>
 
       </div>
     </div>
-    <!--/ Animation. -->
 
 
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Concurrent Work. -->
 
   </div>
 </section>
 
 
-<section class="section" id="BibTeX">
+<!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{park2021nerfies,
@@ -451,7 +583,7 @@
   year      = {2021},
 }</code></pre>
   </div>
-</section>
+</section> -->
 
 
 <footer class="footer">

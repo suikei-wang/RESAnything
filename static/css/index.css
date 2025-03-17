@@ -155,3 +155,71 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+/* CSS for LaTeX Table */
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.latex-table {
+  border-collapse: collapse;
+  font-size: 18px;
+  width: 100%;
+}
+
+.latex-table caption {
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.latex-table th, 
+.latex-table td {
+  padding: 8px;
+  text-align: center;
+}
+
+.latex-table .toprule {
+  border-top: 2px solid black;
+  border-bottom: 1px solid black;
+}
+
+.latex-table .midrule {
+  border-top: 1px solid black;
+}
+
+.latex-table .bottomrule {
+  border-bottom: 2px solid black;
+}
+
+.latex-table .cmidrule {
+  border-bottom: 1px solid black;
+}
+
+.latex-table .highlight-red {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.latex-table .highlight-blue {
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+.latex-table .bold {
+  font-weight: bold;
+}
+
+.latex-table .text-align-left {
+  text-align: left;
+}
+
+.table-container .footnote {
+  font-size: 15px;
+  margin-top: 8px;
+  text-align: center;
+}
