@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="Attribute Prompting for Arbitrary Referring Segmentation in Zero-shot Manner.>
-  <meta name="keywords" content="RESAnything, MLLM, RES">
+  <meta name="description" content="Attribute Prompting for Arbitrary Referring Segmentation in Zero-shot Manner.>
+  <meta name=" keywords" content="RESAnything, MLLM, RES">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>RESAnything: Attribute Prompting for Arbitrary Referring Segmentation</title>
 
@@ -22,15 +22,13 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/icon.jpg">
 
@@ -40,549 +38,567 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">RESAnything: Attribute Prompting for Arbitrary Referring Segmentation</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://suikei-wang.github.io/">Ruiqi Wang,</a></span>
-            <span class="author-block">
-              <a href="https://www2.cs.sfu.ca/~haoz/">Hao Zhang</a>
-            </span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">Simon Fraser University</span>
-          </div>
-
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="./static/pdf/paper.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+            <h1 class="title is-1 publication-title">RESAnything: Attribute Prompting for Arbitrary Referring
+              Segmentation</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://suikei-wang.github.io/">Ruiqi Wang,</a></span>
+              <span class="author-block">
+                <a href="https://www2.cs.sfu.ca/~haoz/">Hao Zhang</a>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Simon Fraser University</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="./static/pdf/paper.pdf" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper (62.3M)</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+                    </span>
+                    <span>Paper (62.3M)</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv (coming soon)</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=y09T2Rn9nvU"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+                    </span>
+                    <span>arXiv (coming soon)</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=y09T2Rn9nvU"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/suikei-wang/RESAnything"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/suikei-wang/RESAnything"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code (coming soon)</span>
+                    </span>
+                    <span>Code (coming soon)</span>
                   </a>
-              </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+                </span>
+                <!-- Dataset Link. -->
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="far fa-images"></i>
-                  </span>
-                  <span>Data (coming soon)</span>
+                    </span>
+                    <span>Data (coming soon)</span>
                   </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="./static/images/teaser.png" />
+        <h2 class="subtitle has-text-centered">
+          Open-vocabulary and zero-shot referring expression segmentation with <span class="dnerf">RESanything</span>.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              We present an <i>open-vocabulary</i> and <i>zero-shot</i> method for <i>arbitrary</i> referring expression
+              segmentation (RES), targeting more general input expressions than those handled by prior works.
+            </p>
+            <p>
+              Specifically, our inputs encompass both object- and <i>part-level</i> labels as well as <i>implicit</i>
+              references pointing to <i>properties</i> or <i>qualities</i> of object/part function, design, style,
+              material, etc. Our model, coined <span class="dnerf">RESanything</span>, leverages Chain-of-Thoughts (CoT)
+              reasoning, where the key idea is <i>attribute prompting</i>. We generate detailed descriptions of
+              object/part attributes including shape, color, and location for potential segment proposals through
+              systematic prompting of a large language model (LLM), where the proposals are produced by a foundational
+              image segmentation model. Our approach encourages deep reasoning about object/part attributes related to
+              function, style, design, etc., to handle implicit queries without any part annotations for training or
+              fine-tuning.
+            </p>
+            <p>
+              As the first zero-shot and LLM-based RES method, <span class="dnerf">RESanything</span> achieves superior
+              performance among zero-shot methods on traditional RES benchmarks and significantly outperforms existing
+              methods on challenging scenarios involving implicit queries and complex part-level relations. We
+              contribute a new benchmark dataset of ~3K carefully curated RES instances to assess part-level, arbitrary
+              RES solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+      <!-- Paper video. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Video</h2>
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/7S3par3kXYQ?rel=0&amp;showinfo=0" frameborder="0"
+              allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <!--/ Paper video. -->
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <div class="columns is-centered">
+
+        <div class="column">
+          <div class="content">
+            <img src="./static/images/overview.png" width="500" />
+
+
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="columns is-centered">
+            <div class="content has-text-justified">
+              <p>
+                <br>
+                <br>
+                Overview of <span class="dnerf">RESanything</span>, a two-stage framework for zero-shot arbitrary RES.
+                The attribute prompting stage generates reference and candidate texts from input image and referring
+                expression using SAM-generated proposals and an MLLM.The mask proposal selection stage leverages MLLM
+                and CLIP to evaluate both candidates and proposals and produce the final response.
+              </p>
             </div>
 
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="./static/images/teaser.png"/>
-      <h2 class="subtitle has-text-centered">
-        Open-vocabulary and zero-shot referring expression segmentation with <span class="dnerf">RESanything</span>.
-      </h2>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            We present an <i>open-vocabulary</i> and <i>zero-shot</i> method for <i>arbitrary</i> referring expression segmentation (RES), targeting more general input expressions than those handled by prior works. 
-          </p>
-          <p>
-            Specifically, our inputs encompass both object- and <i>part-level</i> labels as well as <i>implicit</i> references pointing to <i>properties</i> or <i>qualities</i> of object/part function, design, style, material, etc. Our model, coined <span class="dnerf">RESanything</span>, leverages Chain-of-Thoughts (CoT) reasoning, where the key idea is <i>attribute prompting</i>. We generate detailed descriptions of object/part attributes including shape, color, and location for potential segment proposals through systematic prompting of a large language model (LLM), where the proposals are produced by a foundational image segmentation model. Our approach encourages deep reasoning about object/part attributes related to function, style, design, etc., to handle implicit queries without any part annotations for training or fine-tuning. 
-          </p>
-          <p>
-            As the first zero-shot and LLM-based RES method, <span class="dnerf">RESanything</span> achieves superior performance among zero-shot methods on traditional RES benchmarks and significantly outperforms existing methods on challenging scenarios involving implicit queries and complex part-level relations. We contribute a new benchmark dataset of ~3K carefully curated RES instances to assess part-level, arbitrary RES solutions.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/7S3par3kXYQ?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
-  </div>
-</section>
+      <div class="columns is-centered">
+        <div class="column is-full-width">
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-      <div class="column">
-        <div class="content">
-          <img src="./static/images/overview.png" width="500" />
-
-
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="columns is-centered">
+          <h2 class="title is-3">Vanilla Referring Expression Segmentation</h2>
           <div class="content has-text-justified">
-            <p>
-              <br>
-              <br>
-              Overview of <span class="dnerf">RESanything</span>, a two-stage framework for zero-shot arbitrary RES. The attribute prompting stage generates reference and candidate texts from input image and referring expression using SAM-generated proposals and an MLLM.The mask proposal selection stage leverages MLLM and CLIP to evaluate both candidates and proposals and produce the final response.
-            </p>
+            <!-- HTML for LaTeX Table -->
+            <div class="table-container">
+              <table class="latex-table">
+                <caption>Table 1: Quantitative results on standard RES benchmarks refCOCO/+/g, reported as cIoU values.
+                </caption>
+                <thead class="toprule">
+                  <tr>
+                    <th class="text-align-left bold">Method</th>
+                    <th></th>
+                    <th></th>
+                    <th colspan="3" class="bold">refCOCO</th>
+                    <th></th>
+                    <th colspan="3" class="bold">refCOCO+</th>
+                    <th></th>
+                    <th colspan="3" class="bold">refCOCOg</th>
+                  </tr>
+                  <tr class="cmidrule">
+                    <th></th>
+                    <th></th>
+                    <th>val</th>
+                    <th>testA</th>
+                    <th>testB</th>
+                    <th></th>
+                    <th>val</th>
+                    <th>testA</th>
+                    <th>testB</th>
+                    <th></th>
+                    <th>val(U)</th>
+                    <th>val(G)</th>
+                    <th>test(U)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="midrule">
+                    <td class="text-align-left" colspan="13"><i>fully-supervised on the training set</i></td>
+                  </tr>
+                  <tr>
+                    <td class="text-align-left">VLT</td>
+                    <td></td>
+                    <td>67.5</td>
+                    <td>70.5</td>
+                    <td>65.2</td>
+                    <td></td>
+                    <td>56.3</td>
+                    <td>61.0</td>
+                    <td>50.1</td>
+                    <td></td>
+                    <td>55.0</td>
+                    <td>-</td>
+                    <td>57.7</td>
+                  </tr>
+                  <tr>
+                    <td class="text-align-left">CRIS</td>
+                    <td></td>
+                    <td>70.5</td>
+                    <td>73.2</td>
+                    <td>66.1</td>
+                    <td></td>
+                    <td>62.3</td>
+                    <td>68.1</td>
+                    <td>53.7</td>
+                    <td></td>
+                    <td>59.9</td>
+                    <td>-</td>
+                    <td>60.4</td>
+                  </tr>
+                  <tr>
+                    <td class="text-align-left">LAVT</td>
+                    <td></td>
+                    <td>72.7</td>
+                    <td>75.8</td>
+                    <td>68.8</td>
+                    <td></td>
+                    <td>62.1</td>
+                    <td>68.4</td>
+                    <td>55.1</td>
+                    <td></td>
+                    <td>61.2</td>
+                    <td>-</td>
+                    <td>62.1</td>
+                  </tr>
+                  <tr>
+                    <td class="text-align-left">GRES</td>
+                    <td></td>
+                    <td>73.8</td>
+                    <td>76.5</td>
+                    <td>70.2</td>
+                    <td></td>
+                    <td>66.0</td>
+                    <td>71.0</td>
+                    <td>57.7</td>
+                    <td></td>
+                    <td>65.0</td>
+                    <td>-</td>
+                    <td>66.0</td>
+                  </tr>
+                  <tr class="midrule">
+                    <td class="text-align-left" colspan="13"><i>pre-trained on the same task</i></td>
+                  </tr>
+                  <tr>
+                    <td class="text-align-left">UniRES</td>
+                    <td></td>
+                    <td>71.2</td>
+                    <td>74.8</td>
+                    <td>66.0</td>
+                    <td></td>
+                    <td>59.9</td>
+                    <td>66.7</td>
+                    <td>51.4</td>
+                    <td></td>
+                    <td>62.3</td>
+                    <td>-</td>
+                    <td>63.2</td>
+                  </tr>
+                  <tr>
+                    <td class="text-align-left">LISA-7B</td>
+                    <td></td>
+                    <td>74.9</td>
+                    <td>79.1</td>
+                    <td>72.3</td>
+                    <td></td>
+                    <td>65.1</td>
+                    <td>70.8</td>
+                    <td>58.1</td>
+                    <td></td>
+                    <td>67.9</td>
+                    <td>-</td>
+                    <td>70.6</td>
+                  </tr>
+                  <tr>
+                    <td class="text-align-left">GSVA</td>
+                    <td></td>
+                    <td>77.2</td>
+                    <td>78.9</td>
+                    <td>73.5</td>
+                    <td></td>
+                    <td>65.9</td>
+                    <td>69.6</td>
+                    <td>59.8</td>
+                    <td></td>
+                    <td>72.7</td>
+                    <td>-</td>
+                    <td>73.3</td>
+                  </tr>
+                  <tr>
+                    <td class="text-align-left">GLaMM</td>
+                    <td></td>
+                    <td>79.5</td>
+                    <td class="bold">83.2</td>
+                    <td class="bold">76.9</td>
+                    <td></td>
+                    <td>72.6</td>
+                    <td>78.7</td>
+                    <td>64.6</td>
+                    <td></td>
+                    <td>74.2</td>
+                    <td>-</td>
+                    <td>74.9</td>
+                  </tr>
+                  <tr class="highlight-red">
+                    <td class="text-align-left">SAM4MLLM</td>
+                    <td></td>
+                    <td class="bold">79.8</td>
+                    <td>82.7</td>
+                    <td>74.7</td>
+                    <td></td>
+                    <td class="bold">74.6</td>
+                    <td class="bold">80.0</td>
+                    <td class="bold">67.2</td>
+                    <td></td>
+                    <td class="bold">75.5</td>
+                    <td>-</td>
+                    <td class="bold">76.4</td>
+                  </tr>
+                  <tr class="midrule">
+                    <td class="text-align-left" colspan="13"><i>training-free zero-shot</i></td>
+                  </tr>
+                  <tr>
+                    <td class="text-align-left">GLCLIP</td>
+                    <td></td>
+                    <td>26.2</td>
+                    <td>24.9</td>
+                    <td>26.6</td>
+                    <td></td>
+                    <td>27.8</td>
+                    <td>25.6</td>
+                    <td>27.8</td>
+                    <td></td>
+                    <td>33.5</td>
+                    <td>33.6</td>
+                    <td>33.7</td>
+                  </tr>
+                  <tr>
+                    <td class="text-align-left">CaR</td>
+                    <td></td>
+                    <td>33.6</td>
+                    <td>35.4</td>
+                    <td>30.5</td>
+                    <td></td>
+                    <td>34.2</td>
+                    <td>36.0</td>
+                    <td>31.0</td>
+                    <td></td>
+                    <td>36.7</td>
+                    <td>36.6</td>
+                    <td>36.6</td>
+                  </tr>
+                  <tr class="highlight-blue">
+                    <td class="text-align-left">Ours</td>
+                    <td></td>
+                    <td class="bold">68.5</td>
+                    <td class="bold">72.2</td>
+                    <td class="bold">70.3</td>
+                    <td></td>
+                    <td class="bold">60.7</td>
+                    <td class="bold">65.6</td>
+                    <td class="bold">52.2</td>
+                    <td></td>
+                    <td class="bold">60.1</td>
+                    <td class="bold">60.5</td>
+                    <td class="bold">60.9</td>
+                  </tr>
+                </tbody>
+                <tfoot class="bottomrule">
+                </tfoot>
+              </table>
+            </div>
+          </div>
+          <br />
+
+          <h2 class="title is-3">Reasoning Segmentation</h2>
+          <div class="content has-text-justified">
+            <!-- HTML for ReasonSeg LaTeX Table with inline width control -->
+            <div class="table-container" style="max-width: 700px; margin: 0 auto;">
+              <table class="latex-table" style="width: 600px; margin: 0 auto;">
+                <caption>Table 2: Quantitative results on ReasonSeg validation set.</caption>
+                <thead class="toprule">
+                  <tr>
+                    <th rowspan="2" class="text-align-center">Method</th>
+                    <th></th>
+                    <th>gIoU</th>
+                    <th>cIoU</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr class="midrule">
+                    <td class="text-align-left" colspan="13"><i>pre-trained / supervised</i></td>
+                  </tr>
+                  <td class="text-align-left">GLaMM</td>
+                  <td></td>
+                  <td>47.4</td>
+                  <td>47.2</td>
+                  </tr>
+                  <tr>
+                    <td class="text-align-left">LISA-7B-LLaVA1.5</td>
+                    <td></td>
+                    <td>53.6</td>
+                    <td>52.3</td>
+                  </tr>
+                  <tr>
+                    <td class="text-align-left">LISA-13B-LLaVA1.5</td>
+                    <td></td>
+                    <td>57.7</td>
+                    <td>60.3</td>
+                  </tr>
+
+                  <tr class="highlight-red">
+                    <td class="text-align-left">SAM4MLLM</td>
+                    <td></td>
+                    <td>58.4</td>
+                    <td>60.4</td>
+                  </tr>
+                  <td class="text-align-left" colspan="13"><i>training-free zero-shot</i></td>
+                  <tr>
+                    <td class="text-align-left">CaR</td>
+                    <td></td>
+                    <td>35.2</td>
+                    <td>26.4</td>
+                  </tr>
+                  <tr class="highlight-blue">
+                    <td class="text-align-left">Ours</td>
+                    <td></td>
+                    <td class="bold">74.6</td>
+                    <td class="bold">72.5</td>
+                  </tr>
+                </tbody>
+                <tfoot class="bottomrule">
+                </tfoot>
+              </table>
+            </div>
           </div>
 
+          <h2 class="title is-3"><span class="dnerf">ABO-image-ares</span></h2>
+
+          <div class="content has-text-justified">
+            <p>
+              To further evaluate the capability of <span class="dnerf">RESanything</span> in handling implicit
+              expressions (e.g.,part-level materials, features, and functionalities), we establish the <span
+                class="dnerf">ABO-image-ares</span> benchmark for complex reasoning segmentation tasks.
+            </p>
+            <img src="./static/images/abo-ares.png" />
+          </div>
+          <br />
+
+          <!-- HTML for Dataset LaTeX Table with inline width control -->
+          <div class="table-container" style="max-width: 600px; margin: 0 auto;">
+            <table class="latex-table" style="width: 500px; margin: 0 auto;">
+              <caption>Table 3: Quantitative results on <span class="dnerf">ABO-image-ares</span>.</caption>
+              <thead class="toprule">
+                <tr>
+                  <th rowspan="2" class="text-align-left">Method</th>
+                  <th></th>
+                  <th>gIoU</th>
+                  <th>cIoU</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="midrule">
+                  <td class="text-align-left">LISA-13B-LLaVA1.5</td>
+                  <td></td>
+                  <td>43.3</td>
+                  <td>34.0</td>
+                </tr>
+                <tr class="highlight-red">
+                  <td class="text-align-left">GLaMM</td>
+                  <td></td>
+                  <td>46.2</td>
+                  <td>38.7</td>
+                </tr>
+
+                <tr>
+                  <td class="text-align-left">CaR</td>
+                  <td></td>
+                  <td>24.4</td>
+                  <td>15.7</td>
+                </tr>
+                <tr class="highlight-blue">
+                  <td class="text-align-left">Ours</td>
+                  <td></td>
+                  <td>78.2</td>
+                  <td>72.4</td>
+                </tr>
+              </tbody>
+              <tfoot class="bottomrule">
+              </tfoot>
+            </table>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-
-      
-        <h2 class="title is-3">Vanilla Referring Expression Segmentation</h2>
-        <div class="content has-text-justified">
-          <!-- HTML for LaTeX Table -->
-<div class="table-container">
-  <table class="latex-table">
-      <caption>Table 1: Quantitative results on standard RES benchmarks refCOCO/+/g, reported as cIoU values.</caption>
-      <thead class="toprule">
-          <tr>
-              <th class="text-align-left bold">Method</th>
-              <th></th>
-              <th></th>
-              <th colspan="3" class="bold">refCOCO</th>
-              <th></th>
-              <th colspan="3" class="bold">refCOCO+</th>
-              <th></th>
-              <th colspan="3" class="bold">refCOCOg</th>
-          </tr>
-          <tr class="cmidrule">
-              <th></th>
-              <th></th>
-              <th>val</th>
-              <th>testA</th>
-              <th>testB</th>
-              <th></th>
-              <th>val</th>
-              <th>testA</th>
-              <th>testB</th>
-              <th></th>
-              <th>val(U)</th>
-              <th>val(G)</th>
-              <th>test(U)</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr class="midrule">
-              <td class="text-align-left" colspan="13"><i>fully-supervised on the training set</i></td>
-          </tr>
-          <tr>
-              <td class="text-align-left">VLT</td>
-              <td></td>
-              <td>67.5</td>
-              <td>70.5</td>
-              <td>65.2</td>
-              <td></td>
-              <td>56.3</td>
-              <td>61.0</td>
-              <td>50.1</td>
-              <td></td>
-              <td>55.0</td>
-              <td>-</td>
-              <td>57.7</td>
-          </tr>
-          <tr>
-              <td class="text-align-left">CRIS</td>
-              <td></td>
-              <td>70.5</td>
-              <td>73.2</td>
-              <td>66.1</td>
-              <td></td>
-              <td>62.3</td>
-              <td>68.1</td>
-              <td>53.7</td>
-              <td></td>
-              <td>59.9</td>
-              <td>-</td>
-              <td>60.4</td>
-          </tr>
-          <tr>
-              <td class="text-align-left">LAVT</td>
-              <td></td>
-              <td>72.7</td>
-              <td>75.8</td>
-              <td>68.8</td>
-              <td></td>
-              <td>62.1</td>
-              <td>68.4</td>
-              <td>55.1</td>
-              <td></td>
-              <td>61.2</td>
-              <td>-</td>
-              <td>62.1</td>
-          </tr>
-          <tr>
-              <td class="text-align-left">GRES</td>
-              <td></td>
-              <td>73.8</td>
-              <td>76.5</td>
-              <td>70.2</td>
-              <td></td>
-              <td>66.0</td>
-              <td>71.0</td>
-              <td>57.7</td>
-              <td></td>
-              <td>65.0</td>
-              <td>-</td>
-              <td>66.0</td>
-          </tr>
-          <tr class="midrule">
-              <td class="text-align-left" colspan="13"><i>pre-trained on the same task</i></td>
-          </tr>
-          <tr>
-              <td class="text-align-left">UniRES</td>
-              <td></td>
-              <td>71.2</td>
-              <td>74.8</td>
-              <td>66.0</td>
-              <td></td>
-              <td>59.9</td>
-              <td>66.7</td>
-              <td>51.4</td>
-              <td></td>
-              <td>62.3</td>
-              <td>-</td>
-              <td>63.2</td>
-          </tr>
-          <tr>
-              <td class="text-align-left">LISA-7B</td>
-              <td></td>
-              <td>74.9</td>
-              <td>79.1</td>
-              <td>72.3</td>
-              <td></td>
-              <td>65.1</td>
-              <td>70.8</td>
-              <td>58.1</td>
-              <td></td>
-              <td>67.9</td>
-              <td>-</td>
-              <td>70.6</td>
-          </tr>
-          <tr>
-              <td class="text-align-left">GSVA</td>
-              <td></td>
-              <td>77.2</td>
-              <td>78.9</td>
-              <td>73.5</td>
-              <td></td>
-              <td>65.9</td>
-              <td>69.6</td>
-              <td>59.8</td>
-              <td></td>
-              <td>72.7</td>
-              <td>-</td>
-              <td>73.3</td>
-          </tr>
-          <tr>
-              <td class="text-align-left">GLaMM</td>
-              <td></td>
-              <td>79.5</td>
-              <td class="bold">83.2</td>
-              <td class="bold">76.9</td>
-              <td></td>
-              <td>72.6</td>
-              <td>78.7</td>
-              <td>64.6</td>
-              <td></td>
-              <td>74.2</td>
-              <td>-</td>
-              <td>74.9</td>
-          </tr>
-          <tr class="highlight-red">
-              <td class="text-align-left">SAM4MLLM</td>
-              <td></td>
-              <td class="bold">79.8</td>
-              <td>82.7</td>
-              <td>74.7</td>
-              <td></td>
-              <td class="bold">74.6</td>
-              <td class="bold">80.0</td>
-              <td class="bold">67.2</td>
-              <td></td>
-              <td class="bold">75.5</td>
-              <td>-</td>
-              <td class="bold">76.4</td>
-          </tr>
-          <tr class="midrule">
-              <td class="text-align-left" colspan="13"><i>training-free zero-shot</i></td>
-          </tr>
-          <tr>
-              <td class="text-align-left">GLCLIP</td>
-              <td></td>
-              <td>26.2</td>
-              <td>24.9</td>
-              <td>26.6</td>
-              <td></td>
-              <td>27.8</td>
-              <td>25.6</td>
-              <td>27.8</td>
-              <td></td>
-              <td>33.5</td>
-              <td>33.6</td>
-              <td>33.7</td>
-          </tr>
-          <tr>
-              <td class="text-align-left">CaR</td>
-              <td></td>
-              <td>33.6</td>
-              <td>35.4</td>
-              <td>30.5</td>
-              <td></td>
-              <td>34.2</td>
-              <td>36.0</td>
-              <td>31.0</td>
-              <td></td>
-              <td>36.7</td>
-              <td>36.6</td>
-              <td>36.6</td>
-          </tr>
-          <tr class="highlight-blue">
-              <td class="text-align-left">Ours</td>
-              <td></td>
-              <td class="bold">68.5</td>
-              <td class="bold">72.2</td>
-              <td class="bold">70.3</td>
-              <td></td>
-              <td class="bold">60.7</td>
-              <td class="bold">65.6</td>
-              <td class="bold">52.2</td>
-              <td></td>
-              <td class="bold">60.1</td>
-              <td class="bold">60.5</td>
-              <td class="bold">60.9</td>
-          </tr>
-      </tbody>
-      <tfoot class="bottomrule">
-      </tfoot>
-  </table>
-</div>
-</div>
-        <br/>
-
-<h2 class="title is-3">Reasoning Segmentation</h2>
-<div class="content has-text-justified">
-<!-- HTML for ReasonSeg LaTeX Table with inline width control -->
-<div class="table-container" style="max-width: 700px; margin: 0 auto;">
-  <table class="latex-table" style="width: 600px; margin: 0 auto;">
-      <caption>Table 2: Quantitative results on ReasonSeg validation set.</caption>
-      <thead class="toprule">
-          <tr>
-              <th rowspan="2" class="text-align-center">Method</th>
-              <th></th>
-              <th>gIoU</th>
-              <th>cIoU</th>
-          </tr>
-      </thead>
-      <tbody>
-          
-            <tr class="midrule">
-              <td class="text-align-left" colspan="13"><i>pre-trained / supervised</i></td>
-          </tr>
-              <td class="text-align-left">GLaMM</td>
-              <td></td>
-              <td>47.4</td>
-              <td>47.2</td>
-          </tr>
-          <tr>
-              <td class="text-align-left">LISA-7B-LLaVA1.5</td>
-              <td></td>
-              <td>53.6</td>
-              <td>52.3</td>
-          </tr>
-          <tr>
-              <td class="text-align-left">LISA-13B-LLaVA1.5</td>
-              <td></td>
-              <td>57.7</td>
-              <td>60.3</td>
-          </tr>
-          
-          <tr class="highlight-red">
-              <td class="text-align-left">SAM4MLLM</td>
-              <td></td>
-              <td>58.4</td>
-              <td>60.4</td>
-          </tr>
-          <td class="text-align-left" colspan="13"><i>training-free zero-shot</i></td>
-          <tr>
-            <td class="text-align-left">CaR</td>
-            <td></td>
-            <td>35.2</td>
-            <td>26.4</td>
-        </tr>
-          <tr class="highlight-blue">
-              <td class="text-align-left">Ours</td>
-              <td></td>
-              <td class="bold">74.6</td>
-              <td class="bold">72.5</td>
-          </tr>
-      </tbody>
-      <tfoot class="bottomrule">
-      </tfoot>
-  </table>
-</div>
-</div>
-        
-        <h2 class="title is-3"><span class="dnerf">ABO-image-ares</span></h2>
-
-        <div class="content has-text-justified">
-          <p>
-            To further evaluate the capability of <span class="dnerf">RESanything</span> in handling implicit expressions (e.g.,part-level materials, features, and functionalities), we establish the <span class="dnerf">ABO-image-ares</span> benchmark for complex reasoning segmentation tasks.
-          </p>
-          <img src="./static/images/abo-ares.png"/>
-        </div>
-        <br/>
-
-        <!-- HTML for Dataset LaTeX Table with inline width control -->
-<div class="table-container" style="max-width: 600px; margin: 0 auto;">
-  <table class="latex-table" style="width: 500px; margin: 0 auto;">
-      <caption>Table 3: Quantitative results on <span class="dnerf">ABO-image-ares</span>.</caption>
-      <thead class="toprule">
-          <tr>
-              <th rowspan="2" class="text-align-left">Method</th>
-              <th></th>
-              <th>gIoU</th>
-              <th>cIoU</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr class="midrule">
-              <td class="text-align-left">LISA-13B-LLaVA1.5</td>
-              <td></td>
-              <td>43.3</td>
-              <td>34.0</td>
-          </tr>
-          <tr class="highlight-red">
-              <td class="text-align-left">GLaMM</td>
-              <td></td>
-              <td>46.2</td>
-              <td>38.7</td>
-          </tr>
-
-          <tr>
-            <td class="text-align-left">CaR</td>
-            <td></td>
-            <td>24.4</td>
-            <td>15.7</td>
-        </tr>
-          <tr class="highlight-blue">
-              <td class="text-align-left">Ours</td>
-              <td></td>
-              <td>78.2</td>
-              <td>72.4</td>
-          </tr>
-      </tbody>
-      <tfoot class="bottomrule">
-      </tfoot>
-  </table>
-</div>
-
-      </div>
+  </section>
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title is-3">Acknowledgement</h2>
+      We thank <a href="https://yi-ming-qian.github.io/">Yiming Qian</a>, <a href="https://kwang-ether.github.io/">Kai Wang</a> and <a href="https://fenggenyu.github.io/">Fenggen Yu</a> for their invaluable contributions to this project.
     </div>
+  </section>
 
-
-
-  </div>
-</section>
-
-
-<!-- <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{wang2025resanything,
+  author    = {Wang, Ruiqi and Zhang, Hao},
+  title     = {RESAnything: Attribute Prompting for Arbitrary Referring Segmentation},<!-- journal   = {ICCV}, -->
+  year      = {2025},
 }</code></pre>
-  </div>
-</section> -->
+    </div>
+  </section>
 
 
-<footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            Thanks <a
-              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> for the website template. 
-          </p>
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              Thanks <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> for the website template.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>
