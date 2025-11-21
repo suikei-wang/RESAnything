@@ -10,7 +10,7 @@
 </div>
 
 <div>
-  <i>This repository contains a re-implementation of the codebase. The initial version is subject to a protected license that restricts redistribution. Prompts used </i>
+  <i>This repository contains a re-implementation of the codebase. The initial version is subject to a protected license that restricts redistribution. The prompts provided in this repository may not be the original version, and optimal performance may require further iterative refinement and tuning.</i>
 </div>
 
 <div style="width: 100%; text-align: center; margin:auto;">
@@ -103,6 +103,7 @@ sam:
 
 batch_size: 16
 ```
+You may also edit `prompts.yaml` for better performance or domain-specific tasks. 
 
 
 ### Performance Tips
@@ -130,7 +131,7 @@ RESAnything/
 ```
 
 ## 📊 ABO-ARES Dataset
-TODO
+We will try to release ABO-ARES dataset ASAP. 
 
 ## 👨‍💻 Authors & Contact
 
