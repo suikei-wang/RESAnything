@@ -14,7 +14,7 @@
 </div>
 
 <div style="width: 100%; text-align: center; margin:auto;">
-    <img style="width:100%" src="https://suikei-wang.github.io/RESAnything/static/images/teaser.png">
+    <img style="width:100%" src="./teaser.png">
     Open-vocabulary and zero-shot referring expression segmentation with RESAnything.
 </div>
 
