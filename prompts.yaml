@@ -1,0 +1,108 @@
+reference: |
+  For the region described as "{target}" in this image, identify the correct spatial location first, then provide a single detailed sentence describing that specific object, including its location, appearance (color and shape), and distinctive characteristics. Focus on features that would help uniquely identify this specific region from others in the image. Be as succinct as possible and in English only.
+
+candidate: |
+  You are analyzing a masked image where ONLY the colored/non-black pixels contain the visual content you should describe. The black areas are simply absence of data - treat them as if they don't exist.
+
+  Generate ONE detailed sentence describing ONLY the visible content in the colored regions. Your description must:
+
+  CONTENT REQUIREMENTS:
+  - Begin with 'A [specific object name]...' or 'The [specific object name]...'
+  - IDENTIFY the specific object or part (e.g., "frisbee", "coffee mug", "car door", "person's sleeve")
+  - Avoid generic terms like "object", "item", "thing", "structure" - be specific about what it actually is
+  - Include visual properties: colors, shapes, textures, materials
+  - Use confident language for clear identifications, tentative language ('appears to be', 'seems like') only when truly uncertain about object type
+
+  IDENTIFICATION PRIORITY:
+  - Always attempt to identify the specific object type or part name
+  - For complete objects: name the object (e.g., "white oval frisbee", "red ceramic coffee mug")
+  - For partial objects: identify both the part AND the whole (e.g., "blue denim sleeve of a jacket", "chrome door handle of a car")
+  - If uncertain about exact type, use the closest specific category rather than generic terms
+
+  LOCATION CONTEXT:
+  - Include likely position/context in a scene after identifying the object
+  - For partial objects: specify which part is visible and its relationship to the whole
+  - For complete objects: describe their setting or spatial relationships
+
+  STRICT PROHIBITIONS:
+  - NEVER mention: black areas, background, masks, cropping, bounding boxes, or any image processing terms
+  - NEVER use vague terms like "object", "item", "thing", "structure"
+  - NEVER describe what's NOT visible or missing
+  - NEVER reference the black regions as part of the scene
+
+  EXAMPLES:
+  - Complete object: "A red ceramic coffee mug with a white interior sits on what appears to be a wooden kitchen counter."
+  - Partial object: "The blue denim sleeve with silver zipper details extends from the left side of a person's jacket."
+  - Specific identification: "A white oval frisbee with red trim flies through the air above a grassy field."
+
+  Focus exclusively on describing the colored pixels as if viewing that portion of a natural scene, always identifying the specific object or part.
+
+text_similarity: |
+  You are evaluating whether a candidate text describes the SAME SPECIFIC REGION as the target region in the given image.
+
+  TARGET: "{target}"
+  REFERENCE CONTEXT: "{reference_text}"
+  CANDIDATE: "{candidate_text}"
+
+  EVALUATION CRITERIA:
+
+  SPATIAL BOUNDARIES:
+  - Does the candidate describe the same spatial area/boundaries as the target?
+  - REJECT if candidate describes a sub-region (e.g., target: "person" vs candidate: "person's sock")
+  - REJECT if candidate describes a super-region (e.g., target: "car door" vs candidate: "entire car")
+
+  OBJECT IDENTITY:
+  - Do both texts identify the same primary object/subject?
+  - REJECT if candidate identifies a different object entirely
+  - REJECT if candidate focuses on accessories/parts when target is the whole object
+
+  VISUAL CHARACTERISTICS:
+  - Do key visual properties align (color, shape, material, size)?
+  - Minor descriptive differences are acceptable if the core object matches
+  - REJECT if fundamental visual properties contradict
+
+  CONTEXTUAL CONSISTENCY:
+  - Do spatial relationships and scene context match?
+  - Do actions/states described align (if applicable)?
+
+  DECISION RULES:
+  - ACCEPT ('yes'): Candidate describes the same region with equivalent scope and identity, even with different descriptive details
+  - REJECT ('no'): Candidate describes a different region, sub-region, super-region, or fundamentally different object
+
+  Return ONLY: 'yes' or 'no'
+
+text_mask_similarity: |
+  You are evaluating whether a reference text accurately describes the visible content in the non-black regions of this masked image.
+
+  REFERENCE TEXT: "{reference_text}"
+  TARGET CONTEXT: "{target}"
+
+  The reference text was generated from the full original image describing the target region. You must now verify if it matches what is actually visible in the masked (cropped) version.
+
+  EVALUATION CRITERIA:
+
+  VISUAL CONTENT MATCH:
+  - Do the colors, shapes, textures, and materials described in the text match what you see in the non-black pixels?
+  - Account for lighting/quality differences between full and masked images
+
+  OBJECT IDENTITY ALIGNMENT:
+  - Does the text describe the same object/subject visible in the masked region?
+  - ACCEPT if text describes the whole object but mask shows only a part (e.g., text: "red car" vs mask: shows only car door)
+  - REJECT if text describes a completely different object
+
+  SPATIAL CONSISTENCY:
+  - Do relative spatial relationships mentioned in the text align with what's visible?
+  - Ignore absolute positioning - focus on internal relationships within the visible area
+  - ACCEPT partial spatial descriptions when mask shows incomplete view
+
+  CONTEXTUAL REASONABLENESS:
+  - Are any mentioned actions/states consistent with the visible evidence?
+  - ACCEPT when text includes context not visible in mask but not contradicted by it
+  - REJECT if text contradicts visible evidence
+
+  DECISION LOGIC:
+  - ACCEPT ('yes'): Text accurately describes the visible content, even if it includes additional context from the full image
+  - REJECT ('no'): Text contradicts visible evidence or describes fundamentally different content
+
+  Return ONLY: 'yes' or 'no'
+

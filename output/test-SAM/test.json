@@ -1,0 +1,330 @@
+{
+    "38.png": {
+        "candidate_text": "A white oval frisbee with a curved edge floats in mid-air against a black background.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.55078125,
+        "text_img_clip": 0.2030029296875,
+        "avg_clip": 0.37689208984375
+    },
+    "29.png": {
+        "candidate_text": "The metallic car door handle with a circular lock mechanism is attached to a vehicle, suggesting it is part of a parked car.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.406005859375,
+        "text_img_clip": 0.2353515625,
+        "avg_clip": 0.3206787109375
+    },
+    "22.png": {
+        "candidate_text": "The green textured tree trunk extends upwards against a dark background.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.37353515625,
+        "text_img_clip": 0.2257080078125,
+        "avg_clip": 0.29962158203125
+    },
+    "15.png": {
+        "candidate_text": "A green leafy branch extends into the frame from the top left corner, suggesting it belongs to a tree or bush.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.458740234375,
+        "text_img_clip": 0.23095703125,
+        "avg_clip": 0.3448486328125
+    },
+    "40.png": {
+        "candidate_text": "A white, irregularly shaped object resembling a piece of bread floats against a black background.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.399169921875,
+        "text_img_clip": 0.220947265625,
+        "avg_clip": 0.31005859375
+    },
+    "19.png": {
+        "candidate_text": "A green leafy branch extends into the upper left corner of the frame, suggesting it belongs to a tree or bush.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.48828125,
+        "text_img_clip": 0.230224609375,
+        "avg_clip": 0.3592529296875
+    },
+    "34.png": {
+        "candidate_text": "The side profile of a person's head with short dark hair and a neutral expression appears to be floating against a black background.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.4033203125,
+        "text_img_clip": 0.2208251953125,
+        "avg_clip": 0.31207275390625
+    },
+    "24.png": {
+        "candidate_text": "A green rectangular leaf floats against a black background.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.288330078125,
+        "text_img_clip": 0.208251953125,
+        "avg_clip": 0.248291015625
+    },
+    "12.png": {
+        "candidate_text": "A white plastic bag with a blue stripe at the top hangs suspended in mid-air against a clear sky backdrop.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.392578125,
+        "text_img_clip": 0.1820068359375,
+        "avg_clip": 0.28729248046875
+    },
+    "32.png": {
+        "candidate_text": "A white athletic sock with blue stripes at the top floats against a black background.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.46875,
+        "text_img_clip": 0.260498046875,
+        "avg_clip": 0.3646240234375
+    },
+    "9.png": {
+        "candidate_text": "A dark gray soccer player's shorts with a small red logo on the left leg hang mid-air against a black background.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.5341796875,
+        "text_img_clip": 0.222412109375,
+        "avg_clip": 0.3782958984375
+    },
+    "2.png": {
+        "candidate_text": "The green grassy field stretches out beneath a clear sky, with a person sitting cross-legged on the ground, wearing a dark-colored hooded jacket and light-colored pants.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.501953125,
+        "text_img_clip": 0.288818359375,
+        "avg_clip": 0.3953857421875
+    },
+    "18.png": {
+        "candidate_text": "The arm of a person wearing a beige sleeve extends outward, with the hand positioned as if reaching for something, set against a blank white background.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.42431640625,
+        "text_img_clip": 0.22998046875,
+        "avg_clip": 0.3271484375
+    },
+    "5.png": {
+        "candidate_text": "A young man wearing a blue t-shirt with white text, black shorts, black socks, and a red cap is captured mid-stride, appearing to run or play sports on a grassy field.",
+        "text_comparison": 1,
+        "mask_comparison": 1,
+        "text_text_clip": 0.73193359375,
+        "text_img_clip": 0.329833984375,
+        "avg_clip": 0.5308837890625
+    },
+    "10.png": {
+        "candidate_text": "The arm with a light skin tone and a visible ear extends upwards, appearing to be part of a person's body, with a beige elbow joint below it.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.4677734375,
+        "text_img_clip": 0.2291259765625,
+        "avg_clip": 0.34844970703125
+    },
+    "25.png": {
+        "candidate_text": "A white triangular piece of cloth lies flat against a dark surface.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.41943359375,
+        "text_img_clip": 0.2061767578125,
+        "avg_clip": 0.31280517578125
+    },
+    "30.png": {
+        "candidate_text": "A white sports arm sleeve with blue stripes and a logo on the front floats against a blank backdrop.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.44482421875,
+        "text_img_clip": 0.213134765625,
+        "avg_clip": 0.3289794921875
+    },
+    "28.png": {
+        "candidate_text": "A white elbow joint extends from the right side of an arm, positioned against a plain white background.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.443359375,
+        "text_img_clip": 0.2181396484375,
+        "avg_clip": 0.33074951171875
+    },
+    "11.png": {
+        "candidate_text": "The partially visible human figure, showing a head, arms, and torso, appears to be in motion against a blank backdrop.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.5302734375,
+        "text_img_clip": 0.2666015625,
+        "avg_clip": 0.3984375
+    },
+    "27.png": {
+        "candidate_text": "The green patch of grass appears to be part of a lawn extending towards the right side of the scene.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.57861328125,
+        "text_img_clip": 0.2457275390625,
+        "avg_clip": 0.41217041015625
+    },
+    "37.png": {
+        "candidate_text": "The green leaf with serrated edges hangs from an unseen branch against a dark background.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.37109375,
+        "text_img_clip": 0.2264404296875,
+        "avg_clip": 0.29876708984375
+    },
+    "7.png": {
+        "candidate_text": "The green grass patch appears to be part of a larger lawn extending into the distance.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.56396484375,
+        "text_img_clip": 0.2001953125,
+        "avg_clip": 0.382080078125
+    },
+    "13.png": {
+        "candidate_text": "The beige corrugated metal roof section with a dark brown chimney attached appears to be part of a small shed or barn structure.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.38134765625,
+        "text_img_clip": 0.2252197265625,
+        "avg_clip": 0.30328369140625
+    },
+    "39.png": {
+        "candidate_text": "The beige textured object resembling a small mushroom cap sits on a dark surface, possibly a forest floor.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.45849609375,
+        "text_img_clip": 0.2275390625,
+        "avg_clip": 0.343017578125
+    },
+    "4.png": {
+        "candidate_text": "The green grassy field with a small patch of darker green vegetation in the foreground stretches out towards the horizon under a clear sky.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.5205078125,
+        "text_img_clip": 0.2431640625,
+        "avg_clip": 0.3818359375
+    },
+    "20.png": {
+        "candidate_text": "The white astronaut suit with blue patches and a helmet is floating in space.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.48095703125,
+        "text_img_clip": 0.223388671875,
+        "avg_clip": 0.3521728515625
+    },
+    "21.png": {
+        "candidate_text": "A white corrugated plastic roof section with a small chimney protruding from one end appears to be part of a larger structure, possibly a shed or barn, set against an open sky.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.3994140625,
+        "text_img_clip": 0.2259521484375,
+        "avg_clip": 0.31268310546875
+    },
+    "1.png": {
+        "candidate_text": "The black silhouette of a horse's legs and hooves stands out against a green grassy field.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.499267578125,
+        "text_img_clip": 0.27197265625,
+        "avg_clip": 0.3856201171875
+    },
+    "16.png": {
+        "candidate_text": "A dark blue fabric piece with a small red logo and white text appears to be a part of a larger garment, possibly a jacket or shirt, lying flat against a plain surface.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.5400390625,
+        "text_img_clip": 0.2208251953125,
+        "avg_clip": 0.38043212890625
+    },
+    "31.png": {
+        "candidate_text": "The white curved surface with a smooth texture appears to be a section of a car door, possibly the rear quarter panel, extending diagonally across the frame.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.4638671875,
+        "text_img_clip": 0.2239990234375,
+        "avg_clip": 0.34393310546875
+    },
+    "0.png": {
+        "candidate_text": "The silhouette of two people playing soccer on a grassy field, one kicking the ball while the other appears to be defending.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.60400390625,
+        "text_img_clip": 0.281005859375,
+        "avg_clip": 0.4425048828125
+    },
+    "8.png": {
+        "candidate_text": "The textured brown tree trunk with green foliage partially visible at the top right corner suggests a tree in a natural outdoor setting.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.41943359375,
+        "text_img_clip": 0.23046875,
+        "avg_clip": 0.324951171875
+    },
+    "3.png": {
+        "candidate_text": "A soccer player in mid-kick, wearing a white jersey with black shorts and striped socks, appears to be in action on a sports field.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.572265625,
+        "text_img_clip": 0.2445068359375,
+        "avg_clip": 0.40838623046875
+    },
+    "35.png": {
+        "candidate_text": "The black pixelated area represents an absence of data and does not contain any visible content.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.483642578125,
+        "text_img_clip": 0.21923828125,
+        "avg_clip": 0.3514404296875
+    },
+    "26.png": {
+        "candidate_text": "A green broccoli floret with a textured surface sits against a black background.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.2205810546875,
+        "text_img_clip": 0.22509765625,
+        "avg_clip": 0.22283935546875
+    },
+    "36.png": {
+        "candidate_text": "The green and black pixelated object appears to be a small section of a plant stem or leaf, possibly from a succulent, extending upwards against a dark background.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.39794921875,
+        "text_img_clip": 0.22216796875,
+        "avg_clip": 0.31005859375
+    },
+    "23.png": {
+        "candidate_text": "A small green plant with dense, rounded leaves grows in a natural outdoor setting.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.480224609375,
+        "text_img_clip": 0.2181396484375,
+        "avg_clip": 0.34918212890625
+    },
+    "14.png": {
+        "candidate_text": "A white astronaut suit with a helmet and a patch on the shoulder floats against a black void.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.48291015625,
+        "text_img_clip": 0.1964111328125,
+        "avg_clip": 0.33966064453125
+    },
+    "6.png": {
+        "candidate_text": "The green leafy tree branches with brown trunks extend upwards into the sky, suggesting a forested area.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.396484375,
+        "text_img_clip": 0.2322998046875,
+        "avg_clip": 0.31439208984375
+    },
+    "33.png": {
+        "candidate_text": "A yellow and black striped soccer ball floats mid-air against a black background.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.4189453125,
+        "text_img_clip": 0.2022705078125,
+        "avg_clip": 0.31060791015625
+    },
+    "17.png": {
+        "candidate_text": "A blue t-shirt with white text and a small graphic design hangs against a plain background.",
+        "text_comparison": 0,
+        "mask_comparison": 0,
+        "text_text_clip": 0.53076171875,
+        "text_img_clip": 0.262939453125,
+        "avg_clip": 0.3968505859375
+    }
+}

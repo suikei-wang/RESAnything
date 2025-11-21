@@ -1,0 +1,21 @@
+model:
+  name: "Qwen/Qwen2.5-VL-7B-Instruct"
+  dtype: "bfloat16"
+  attn_implementation: "flash_attention_2"
+  device_map: "auto"
+
+sam:
+  checkpoint: "sam_vit_h_4b8939.pth"
+  model_type: "vit_h"
+  device: "cuda"
+  min_mask_percentage: 0.004
+  points_per_side: 16
+  pred_iou_thresh: 0.92
+  stability_score_thresh: 0.92
+  crop_n_layers: 2
+  crop_n_points_downscale_factor: 2
+
+batch_size: 16
+
+paths:
+  prompts: "prompts.yaml"
