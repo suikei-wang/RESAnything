@@ -13,9 +13,9 @@
   <i>This repository contains a re-implementation of the codebase. The initial version is subject to a protected license that restricts redistribution. The prompts provided in this repository may not be the original version, and optimal performance may require further iterative refinement and tuning.</i>
 </div>
 
-<div style="width: 100%; text-align: center; margin:auto;">
+<div align="center" style="width: 100%; text-align: center; margin:auto;">
     <img style="width:100%" src="./teaser.png">
-    Open-vocabulary and zero-shot referring expression segmentation with RESAnything.
+  Open-vocabulary and zero-shot referring expression segmentation with RESAnything.
 </div>
 
 
