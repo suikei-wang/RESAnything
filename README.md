@@ -140,10 +140,12 @@ If you have any queries, feel free to contact: Ruiqi Wang (rwa135@sfu.ca)
 ## 📚 Bibtex
 
 ```bibtex
-@inproceedings{wang2025resanything,
+@article{wang2026resanything,
   title={Resanything: Attribute prompting for arbitrary referring segmentation},
   author={Wang, Ruiqi and Zhang, Hao},
-  booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
-  year={2025}
+  journal={Advances in Neural Information Processing Systems},
+  volume={38},
+  pages={66893--66944},
+  year={2026}
 }
 ```
